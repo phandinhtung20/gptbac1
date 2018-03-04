@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textColor="#000000"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:text="Nhập số a:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edit_a"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:textColor="#000000"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:text="Nhập số b:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edit_b"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cal"
+        android:paddingTop="7dp"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="Kết quả"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ff0000"/>
+    
+</LinearLayout>
